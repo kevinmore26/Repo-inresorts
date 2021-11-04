@@ -6,7 +6,7 @@ const URL = "https://servicios.inclubtest.online:2053/api"
 const obtenerEstado = async(busqueda = "") => {
     try {
         let { data } = await axios.get(`${URL}/suscription/all/state/${busqueda}`)
-        return data.objModel 
+        return data.objModel
     } catch (error) {
         throw error
     }
@@ -15,7 +15,7 @@ const obtenerEstado = async(busqueda = "") => {
 const obtenerInfoUsuario= async() => {
     try {
         let { data } = await axios.get(`${URL}/payment/schedule/vouchers/383/`)
-        return data.objModel 
+        return data.objModel
     } catch (error) {
         throw error
     }
