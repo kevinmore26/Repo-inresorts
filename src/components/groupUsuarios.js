@@ -27,14 +27,14 @@ export default function GroupUsuarios({usuarios}) {
                         <tr key={i}>
                             
                             <td style={{
-                                padding: '',
+                                textAlign:'center'
                                 
                             }} > {usu.idUser}</td>
                             <td style={{
-                                    padding: '',
+                                    textAlign:'center'
                             }}>{usu.nextExpiration}</td>
                             <td style={{
-                                    padding: '',
+                                    textAlign:'center'
                             }}>{usu.status}</td>
                              <Link href="#" className="btn btn btn btn-warning" style={{color:'white', border:'1px solid rgb(54 146 74)',textDecoration:'none',backgroundColor:'rgb(54 146 74)', paddingLeft:'10px',paddingRight:'10px', borderRadius:'10px'}}to={`/vouchers`} >Detalles</Link> 
                             
