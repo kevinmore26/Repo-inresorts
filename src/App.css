@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+.btn-buscar:hover{
+  background-color: rgb(55, 146, 103);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
