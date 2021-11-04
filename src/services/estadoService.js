@@ -12,6 +12,15 @@ const obtenerEstado = async(busqueda = "") => {
     }
 }
 
+const obtenerInfoUsuario= async() => {
+    try {
+        let { data } = await axios.get(`${URL}/payment/schedule/vouchers/383/`)
+        return data.objModel 
+    } catch (error) {
+        throw error
+    }
+}
+
 const obtenerUsuarios = async() => {
     try {
         let { data } = await axios.get(`${URL}/suscription`)
@@ -23,5 +32,6 @@ const obtenerUsuarios = async() => {
 
 export {
     obtenerEstado,
-    obtenerUsuarios
+    obtenerUsuarios,
+    obtenerInfoUsuario
 }

@@ -2,7 +2,7 @@ import {Link} from "react-router-dom"
 
 
 export default function GroupUsuarios({usuarios}) {
- console.log(usuarios)
+
     
     return (
 
@@ -36,7 +36,7 @@ export default function GroupUsuarios({usuarios}) {
                             <td style={{
                                     padding: '',
                             }}>{usu.status}</td>
-                             <Link href="#" className="btn btn btn btn-warning" style={{color:'white', border:'1px solid rgb(54 146 74)',textDecoration:'none',backgroundColor:'rgb(54 146 74)', paddingLeft:'10px',paddingRight:'10px', borderRadius:'10px'}}to={`/payment/schedule/vouchers/383`} >Detalles</Link> 
+                             <Link href="#" className="btn btn btn btn-warning" style={{color:'white', border:'1px solid rgb(54 146 74)',textDecoration:'none',backgroundColor:'rgb(54 146 74)', paddingLeft:'10px',paddingRight:'10px', borderRadius:'10px'}}to={`/vouchers`} >Detalles</Link> 
                             
                            
                         </tr>
